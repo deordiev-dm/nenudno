@@ -6,32 +6,49 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20240715135123">
-	<link rel="shortcut icon" href="favicon.ico">
+	<link rel="stylesheet" href="css/style.min.css?_v=20240727130532">
+	<link rel="shortcut icon" href="#">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js?_v=20240727130532" async></script>
 </head>
 
 <body>
 	<div class="wrapper">
 		<header class="header">
 			<div class="header__container">
-				<nav class="header__navigation navigation">
-					<a class="navigation__link" href="">Головна</a>
-					<a class="navigation__link" href="">Відгуки</a>
-					<a class="navigation__link" href="">Про мене</a>
-					<a class="navigation__link" href="">Як звʼязатись?</a>
+				<nav class="header__menu menu">
+					<div class="menu__body">
+						<ul class="menu__list">
+							<li class="menu__item">
+								<a class="menu__link" href="#intro">Головна</a>
+							</li>
+							<li class="menu__item">
+								<a class="menu__link" href="#about-me">Про мене</a>
+							</li>
+							<li class="menu__item">
+								<a class="menu__link" href="#testimonials">Відгуки</a>
+							</li>
+							<li class="menu__item">
+								<a class="menu__link" href="#contact">Як звʼязатись?</a>
+							</li>
+						</ul>
+					</div>
+
+					<button class="menu__icon icon-menu">
+						<span></span>
+					</button>
 				</nav>
+
 				<div class="header__social social">
-					<a href="" class="social__link _icon-instagram"></a>
-					<a href="" class="social__link _icon-telegram"></a>
-					<a href="" class="social__link _icon-viber"></a>
-					<a href="" class="social__link _icon-tiktok"></a>
+					<a href="https://t.me/deordiev_dm" target="_blank" class="social__link _icon-telegram"></a>
+					<!-- <a href="#" class="social__link _icon-viber"></a> -->
+					<!-- <a href="#" class="social__link _icon-facebook"></a> -->
 				</div>
 			</div>
 		</header>
 		<main class="page">
-			<div class="page__intro intro">
+			<div class="page__intro intro" id="intro">
 				<div class="intro__container">
 					<div class="intro__thoughts thoughts">
 						<div class="thoughts__item">👻 Не зрозумів вчителя в школі, тому написав роботу погано</div>
@@ -39,11 +56,152 @@
 						<div class="thoughts__item">💀 Все ще вчу мову, але складні визначення треба розуміти вже зараз ❌</div>
 					</div>
 					<div class="intro__content content">
-						<h1 class="intro__title">Забудь про стрес при вивченні математики.</h1>
+						<h1 class="intro__title title">Забудь про стрес при вивченні математики.</h1>
 						<p class="intro__subtitle">Стань впевненим в своїх знаннях та отримуй високі оцінки. <br>
 							<span class="gradient-text">вчись ненудно</span>
 						</p>
-						<a href="#" class="intro__cta">Реєструйся на <span class="hl">безкоштовне</span> пробне заняття!</a>
+						<a href="#schedule-call" class="intro__cta">Реєструйся на <span class="hl">безкоштовне</span> заняття!</a>
+					</div>
+				</div>
+			</div>
+			<div class="page__about-me about-me" id="about-me">
+				<div class="about-me__container">
+					<h2 class="about-me__title title">Познайомимось?</h2>
+					<div class="about-me__content">
+						<div class="about-me__text">
+							<h3>Трохи фактів про мене: </h3>
+							<ul>
+								<li>Мене звати Дмитро і мені всього лиш 22 роки!</li>
+								<li>
+									Я закінчив бакалаврат Харківського Національного Університету ім. В. Н. Каразіна за спеціальністю 105
+									Прикладна фізика та наноматеріали 🤓
+								</li>
+								<li>Почав викладати математику ще у 2021 році, тож маю 3 роки досвіду</li>
+								<li>У 2020 році здав ЗНО з математики на 185 балів</li>
+							</ul>
+							<p>Під час своєї викладацької діяльності я керуюсь наступними принципами: </p>
+							<p>
+								Я працюю над тим, щоб мої студенти не боялись помилятись на уроках<br>
+								Учень має розуміти, що ми по-справжньому вчимось тільки тоді, коли ми помиляємось
+							</p>
+							<p>
+								Навчання має бути веселим. Я намагаюсь бути для своїх студентів не вчителем, а другом. <br>
+								Невелика різниця у віці між мною та моїми студентами лише зміцнює цей зв'язок <br>
+								Учень почуває себе комфортніше, коли з ним спілкуються на рівних!
+							</p>
+							<p>
+								Я часто пояснюю складні терміни за допомогою простих аналогій: торти, піци і бублики, гроші і т.п. <br>
+								Я зроблю що завгодно для того, щоб учень зрозумів ЯК це працює.
+							</p>
+						</div>
+						<div class="about-me__image">
+							<picture><source srcset="img/portrait.webp" type="image/webp"><img src="img/portrait.jpg" alt="my face smiling into the camera"></picture>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="page__testimonials testimonials" id="testimonials">
+				<div class="testimonials__container">
+					<h2 class="title testimonials__title">Відгук студента - замість тисячі слів 🥰</h2>
+					<div class="testimonials__items">
+
+						<div class="testimonials__item testimonial">
+							<div class="testimonial__image">
+								<picture><source srcset="img/testimonials/01.webp" type="image/webp"><img src="img/testimonials/01.png" alt=""></picture>
+							</div>
+							<div class="testimonial__text">
+								<h3 class="testimonial__student">Дмитро, 8 клас</h3>
+								<p class="testimonial__programm">Підготовка до egzamin ósmoklasisty (Польща)</p>
+							</div>
+						</div>
+
+						<div class="testimonials__item testimonial">
+							<div class="testimonial__image">
+								<picture><source srcset="img/testimonials/02.webp" type="image/webp"><img src="img/testimonials/02.png" alt=""></picture>
+							</div>
+							<div class="testimonial__text">
+								<h3 class="testimonial__student">Віталік, 8 клас</h3>
+								<p class="testimonial__programm">Заняття за німецькою програмою</p>
+								<p class="testimonial__info">1 - найвища оцінка в школах Німеччини<span>*</span></p>
+							</div>
+						</div>
+
+						<div class="testimonials__item testimonial">
+							<div class="testimonial__image">
+								<picture><source srcset="img/testimonials/03.webp" type="image/webp"><img src="img/testimonials/03.png" alt=""></picture>
+							</div>
+							<div class="testimonial__text">
+								<h3 class="testimonial__student">Ніколь, 11 клас</h3>
+								<p class="testimonial__programm">Заняття за українською програмою, підготовка до НМТ</p>
+							</div>
+						</div>
+
+						<div class="testimonials__item testimonial">
+							<div class="testimonial__image">
+								<picture><source srcset="img/testimonials/04.webp" type="image/webp"><img src="img/testimonials/04.png" alt=""></picture>
+							</div>
+							<div class="testimonial__text">
+								<h3 class="testimonial__student">Таня, 2 клас технікуму</h3>
+								<p class="testimonial__programm">Заняття за польською програмою</p>
+							</div>
+						</div>
+
+						<div class="testimonials__item testimonial">
+							<div class="testimonial__image">
+								<picture><source srcset="img/testimonials/05.webp" type="image/webp"><img src="img/testimonials/05.jpeg" alt=""></picture>
+							</div>
+							<div class="testimonial__text">
+								<h3 class="testimonial__student">Даніл, 8 клас</h3>
+								<p class="testimonial__programm">Підготовка до egzamin ósmoklasisty (Польща)</p>
+							</div>
+						</div>
+
+						<div class="testimonials__item testimonial">
+							<div class="testimonial__image">
+								<picture><source srcset="img/testimonials/06.webp" type="image/webp"><img src="img/testimonials/06.png" alt=""></picture>
+							</div>
+							<div class="testimonial__text">
+								<h3 class="testimonial__student">Ілля, 8 клас</h3>
+								<p class="testimonial__programm">Заняття за польською програмою</p>
+							</div>
+						</div>
+
+						<div class="testimonials__item testimonial">
+							<div class="testimonial__image">
+								<picture><source srcset="img/testimonials/08.webp" type="image/webp"><img src="img/testimonials/08.png" alt=""></picture>
+							</div>
+							<div class="testimonial__text">
+								<h3 class="testimonial__student">Софія, 3 клас технікуму</h3>
+								<p class="testimonial__programm">Заняття за польською програмою</p>
+							</div>
+						</div>
+
+						<div class="testimonials__item testimonial">
+							<div class="testimonial__image">
+								<picture><source srcset="img/testimonials/09.webp" type="image/webp"><img src="img/testimonials/09.png" alt=""></picture>
+							</div>
+							<div class="testimonial__text">
+								<h3 class="testimonial__student">Мартін, 11 клас</h3>
+								<p class="testimonial__programm">Заняття за українською програмою, підготовка до НМТ</p>
+							</div>
+						</div>
+
+
+					</div>
+				</div>
+			</div>
+			<div class="page__contact contact" id="contact">
+				<div class="contact__container">
+					<div class="contact__header">
+						<h2 class="contact__title title">Як зі мною зв'язатись?</h2>
+						<p>
+							Зі мною можна зв'язатись, натиснувши на іконку месенджера у верхньому правому куті, або одразу забронювати Ваше
+							безкоштовне
+							пробне заняття за допомогою календаря нижче. В цьому випадку, я самостійно зв'яжусь із Вами.
+						</p>
+					</div>
+					<div class="contact__calendar">
+						<div id="schedule-call" class="calendly-inline-widget" data-url="https://calendly.com/dimadeordiev2002/free-lesson?background_color=fcb045&primary_color=aa1111" style="min-width:320px;height:700px;"></div>
 					</div>
 				</div>
 			</div>
@@ -53,7 +211,7 @@
 			</div>
 		</footer>
 	</div>
-	<script src="js/app.min.js?_v=20240715135123"></script>
+	<script src="js/app.min.js?_v=20240727130532"></script>
 </body>
 
 </html>
